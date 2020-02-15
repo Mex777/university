@@ -1,8 +1,10 @@
 import java.util.Scanner;
 public class main {
 	public static void main(String[] args) {
-		university[] lista = new university[8]; 
-		for (int i=0; i<8; i++)
+		int length = 8;
+		university[] lista = new university[length]; 
+
+		for (int i=0; i<length; i++)
 			lista[i] = new university();
 		lista[0].setName("KEA");
 		lista[0].setCountry("Denmark");
@@ -85,7 +87,7 @@ public class main {
 	    lista[7].setTotal(lista[7]);
 
 	    int numar=1;
-	    for (int i=0; i<8; i++) {
+	    for (int i=0; i<length; i++) {
 	    	System.out.println(numar + ". " + lista[i].getName());
 	    	numar++;
 	    } 
